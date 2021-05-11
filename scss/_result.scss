@@ -1,0 +1,28 @@
+.result {
+   background: #E5E5E5;
+   position: relative;
+   &-content {
+      padding: 200px 0;
+   }
+   &-item {
+      font-weight: 400;
+      text-align: center;
+      color: #3A173C;
+      h3 {
+         font-size: 40px;
+         line-height: 50px;
+         margin: 89px 0 40px;
+      }
+      p {
+         font-size: 18px;
+         line-height: 29px;
+         text-align: left;
+         padding: 0 300px;
+         margin: 20px 0;
+         @media (max-width: 797px) {
+            padding: 0 40px;
+            text-align: center;
+         }
+      }
+   }
+}

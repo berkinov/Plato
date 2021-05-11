@@ -1,0 +1,64 @@
+.plato {
+   background: #E5E5E5;
+   position: relative;
+   &-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 100px 40px;
+      background: url(../img/about-item-bg.svg);
+      background-repeat: no-repeat;
+      background-position: 40px 650px;
+      @media (max-width: 931px) {
+         flex-direction: column;
+         text-align: center;
+      }
+      img {
+         width: 500px;
+         height: auto;
+         object-fit: cover;
+         @media (max-width: 767px) {
+            width: 300px;
+         }
+      }
+      &__item {
+         color: #3A173C;
+         background: url(../img/about-title-bg.svg);
+         background-repeat: no-repeat;
+         background-position: right 0;
+         h2 {
+            font-weight: 400;
+            font-size: 70px;
+            line-height: 80px;
+            margin-bottom: 30px;
+            @media (max-width: 767px) {
+               font-size: 40px;
+               line-height: 35px;
+            }
+         }
+         p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            margin: 7px 0;
+         }
+         p:nth-child(3) {
+            margin-bottom: 70px;
+         }
+         a {
+            font-size: 22px;
+            line-height: 36px;
+            text-align: center;
+            color: #E0DCDB;
+            background: #3A173C;
+            border: 2px solid #3A173C;
+            box-sizing: border-box;
+            border-radius: 44px;
+            padding: 13px 50px;
+            @media (max-width: 400px) {
+               padding: 13px 10px;
+            }
+         }
+      }
+   }
+}

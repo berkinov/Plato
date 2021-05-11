@@ -1,0 +1,41 @@
+.couch {
+   background: #E5E5E5;
+   &-content {
+      padding: 107px 0 170px;
+      background: url(../img/couch-bg.svg);
+      background-repeat: no-repeat;
+      background-size: 98%;
+      background-position: 0px 100px;
+      text-align: center;
+      color: #C0B9B5;
+      font-weight: 400;
+      @media (max-width: 991px) {
+         background-size: 150%;
+         background-position: 0px 150px;
+      }
+      h3 {
+         font-size: 65px;
+         line-height: 77px;
+         margin: 50px 0;
+         @media (max-width: 991px) {
+            font-size: 50px;
+            line-height: 50px;
+         }
+      }
+      p {
+         font-size: 18px;
+         line-height: 29px;
+         margin: 0 300px 30px;
+         @media (max-width: 991px) {
+            margin: 0;
+         }
+      }
+      img {
+         @media (max-width: 767px) {
+            width: 250px;
+            height: auto;
+            margin-top: 100px;
+         }
+      }
+   }
+}

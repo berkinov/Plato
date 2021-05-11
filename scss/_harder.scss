@@ -1,0 +1,97 @@
+.harder {
+   position: relative;
+   background: #E5E5E5;
+   &-content {
+      padding: 100px 40px;
+      &__title {
+         font-size: 60px;
+         line-height: 60px;
+         text-align: center;
+         color: #3A173C;
+         @media (max-width: 567px) {
+            font-size: 35px;
+            line-height: 35px;
+         }
+      }
+      
+		&__text {
+         font-size: 30px;
+         line-height: 50px;
+         text-align: center;
+         color: #3A173C;
+      }
+   }
+   &-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      @media (max-width: 902px) {
+         flex-direction: column;
+      }
+      img {
+         width: 500px;
+         height: auto;
+         object-fit: cover;
+         @media (max-width: 500px) {
+            width: 300px;
+         }
+      }
+      &__item {
+         color: #3A173C;
+         padding: 0 25px;
+      }
+      
+		&__item-text {
+         font-size: 18px;
+         line-height: 27px;
+      }
+      
+		&__item-title {
+         font-size: 58px;
+         line-height: 64px;
+         margin: 16px 0 37px;
+         font-weight: 400;
+         @media (max-width: 567px) {
+            font-size: 30px;
+            line-height: 35px;
+         }
+      }
+      
+		&__item-desc {
+         font-size: 18px;
+         line-height: 27px;
+      }
+   }
+   &-link {
+      text-align: center;
+      a {
+         font-size: 22px;
+         line-height: 36px;
+         text-align: center;
+         color: #E0DCDB;
+         background: #3A173C;
+         border: 2px solid #3A173C;
+         box-sizing: border-box;
+         border-radius: 44px;
+         padding: 15px 82px;
+         margin: 0 22px;
+         &:nth-last-child(1) {
+            padding: 15px 52px;
+         }
+         @media (max-width: 1008px) {
+            display: flex;
+            flex-direction: column;
+            width: 360px;
+            font-size: 18px;
+            padding: 15px 0;
+            margin: 10px auto;
+         }
+         @media (max-width: 500px) {
+            font-size: 14px;
+            width: 250px;
+            padding: 15px 0 !important;
+         }
+      }
+   }
+}
